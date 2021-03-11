@@ -1,4 +1,4 @@
-package com.example
+package com.example.db1
 
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
@@ -9,5 +9,7 @@ class TestEntityController(
     val testEntityRepository: TestEntityRepository
 ) {
     @Get
-    fun getAllTestEntities(): Flowable<TestEntity> = testEntityRepository.findAll()
+    fun getAllTestEntities(): Flowable<TestEntity> {
+        return testEntityRepository.findAll()
+    }
 }

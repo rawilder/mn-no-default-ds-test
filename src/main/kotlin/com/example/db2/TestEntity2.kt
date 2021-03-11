@@ -1,4 +1,4 @@
-package com.example
+package com.example.db2
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -7,7 +7,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "test_entity")
-data class TestEntity(
+data class TestEntity2(
     var name: String
 ) {
     @Id
